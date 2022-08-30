@@ -3,10 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FirstTagComponent } from './components/first-tag/first-tag.component';
+import { ParentDataComponent } from './components/parent-data/parent-data.component';
+import { FirstDirectivesComponent } from './components/first-directives/first-directives.component';
+import { IfRenderComponent } from './components/if-render/if-render.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirstTagComponent,
+    ParentDataComponent,
+    FirstDirectivesComponent,
+    IfRenderComponent
   ],
   imports: [
     BrowserModule,
