@@ -11,6 +11,7 @@ import { EventHandlerComponent } from './components/event-handler/event-handler.
 import { NumberGeneratorComponent } from './components/number-generator/number-generator.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { AnimalCardComponent } from './components/animal-card/animal-card.component';
+import { PipeOperatorsComponent } from './components/pipe-operators/pipe-operators.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AnimalCardComponent } from './components/animal-card/animal-card.compon
     EventHandlerComponent,
     NumberGeneratorComponent,
     ListRenderComponent,
-    AnimalCardComponent
+    AnimalCardComponent,
+    PipeOperatorsComponent
   ],
   imports: [
     BrowserModule,
