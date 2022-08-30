@@ -1,16 +1,24 @@
 <div class="card">
-  <p>
-    Conteúdo deve ser exibido?
-    <strong [ngStyle]="{ color: shouldRender ? 'green' : 'red' }">{{
-      shouldRender ? "Sim" : "Não"
-    }}</strong>
-  </p>
+  <div class="row" [ngStyle]="{ gap: '50px' }">
+    <p>
+      Conteúdo deve ser exibido?
+      <strong [ngStyle]="{ color: shouldRender ? 'green' : 'red' }">{{
+        shouldRender ? "Sim" : "Não"
+      }}</strong>
+    </p>
+    <button (click)="toggleRender()">
+      {{ shouldRender ? "Esconder" : "Exibir" }}
+    </button>
+  </div>
+
   <div *ngIf="shouldRender; else blockedContent">
     <br />
     <h3>Conteúdo sendo exibido!</h3>
   </div>
   <ng-template #blockedContent>
-    <br />
-    <h3>Você não pode ver esse conteúdo.</h3>
+    <div>
+      <br />
+      <h3>Conteúdo está escondido.</h3>
+    </div>
   </ng-template>
 </div>

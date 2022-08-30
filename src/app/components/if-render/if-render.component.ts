@@ -11,4 +11,8 @@ export class IfRenderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  toggleRender(): void {
+    this.shouldRender = !this.shouldRender;
+  }
 }
