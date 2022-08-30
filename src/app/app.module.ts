@@ -7,6 +7,9 @@ import { FirstTagComponent } from './components/first-tag/first-tag.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { FirstDirectivesComponent } from './components/first-directives/first-directives.component';
 import { IfRenderComponent } from './components/if-render/if-render.component';
+import { EventHandlerComponent } from './components/event-handler/event-handler.component';
+import { NumberGeneratorComponent } from './components/number-generator/number-generator.component';
+import { ListRenderComponent } from './components/list-render/list-render.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
     FirstTagComponent,
     ParentDataComponent,
     FirstDirectivesComponent,
-    IfRenderComponent
+    IfRenderComponent,
+    EventHandlerComponent,
+    NumberGeneratorComponent,
+    ListRenderComponent
   ],
   imports: [
     BrowserModule,

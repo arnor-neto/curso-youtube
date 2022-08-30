@@ -1,0 +1,6 @@
+<div class="card">
+  <app-number-generator
+    (changeNumber)="onChangeNumber($event)"
+  ></app-number-generator>
+  <h2 *ngIf="currentNumber > -1">O número sorteado foi: {{ currentNumber }}</h2>
+</div>

@@ -1,0 +1,10 @@
+<div class="card">
+  <h2>Animais:</h2>
+  <div class="wrapper">
+    <div class="info-container" *ngFor="let animal of animals">
+      <p>Nome: {{ animal.name }}</p>
+      <hr />
+      <p>Tipo: {{ animal.type }}</p>
+    </div>
+  </div>
+</div>
