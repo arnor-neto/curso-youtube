@@ -1,10 +1,14 @@
 <div class="card">
   <h2>Animais:</h2>
   <div class="wrapper">
-    <div class="info-container" *ngFor="let animal of animals">
-      <p>Nome: {{ animal.name }}</p>
-      <hr />
-      <p>Tipo: {{ animal.type }}</p>
-    </div>
+    <app-animal-card
+      *ngFor="let animal of animals"
+      [animal]="animal"
+      (selectAnimal)="handleSelectAnimal($event)"
+    ></app-animal-card>
   </div>
+  <h3 *ngIf="selectedAnimal" [ngStyle]="{ 'margin-top': '18px' }">
+    O {{ selectedAnimal.type }} {{ selectedAnimal.name }} possui
+    {{ selectedAnimal.age }} anos.
+  </h3>
 </div>

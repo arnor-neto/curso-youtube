@@ -10,6 +10,7 @@ import { IfRenderComponent } from './components/if-render/if-render.component';
 import { EventHandlerComponent } from './components/event-handler/event-handler.component';
 import { NumberGeneratorComponent } from './components/number-generator/number-generator.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
+import { AnimalCardComponent } from './components/animal-card/animal-card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
     IfRenderComponent,
     EventHandlerComponent,
     NumberGeneratorComponent,
-    ListRenderComponent
+    ListRenderComponent,
+    AnimalCardComponent
   ],
   imports: [
     BrowserModule,

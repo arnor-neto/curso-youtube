@@ -1,0 +1,14 @@
+.animal-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: lightpink;
+  border-radius: 8px;
+  padding: 8px;
+  gap: 8px;
+}
+
+hr.divider {
+  width: 100%;
+  border: 1px solid white;
+}
