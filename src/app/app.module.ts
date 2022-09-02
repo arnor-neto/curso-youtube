@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,7 @@ import { NumberGeneratorComponent } from './components/number-generator/number-g
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { AnimalCardComponent } from './components/animal-card/animal-card.component';
 import { PipeOperatorsComponent } from './components/pipe-operators/pipe-operators.component';
+import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,11 @@ import { PipeOperatorsComponent } from './components/pipe-operators/pipe-operato
     NumberGeneratorComponent,
     ListRenderComponent,
     AnimalCardComponent,
-    PipeOperatorsComponent
+    PipeOperatorsComponent,
+    TwoWayBindingComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
