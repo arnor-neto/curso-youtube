@@ -5,11 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  userData = {
-    name: 'John',
-    email: 'john@doe.com',
-    role: 'admin',
-  };
-  title = 'curso-youtube';
-}
+export class AppComponent {}

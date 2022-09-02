@@ -5,6 +5,7 @@
       *ngFor="let animal of animals"
       [animal]="animal"
       (selectAnimal)="handleSelectAnimal($event)"
+      (deleteAnimal)="handleDeleteAnimal($event)"
     ></app-animal-card>
   </div>
   <h3 *ngIf="selectedAnimal" [ngStyle]="{ 'margin-top': '18px' }">

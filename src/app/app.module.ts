@@ -14,6 +14,7 @@ import { ListRenderComponent } from './components/list-render/list-render.compon
 import { AnimalCardComponent } from './components/animal-card/animal-card.component';
 import { PipeOperatorsComponent } from './components/pipe-operators/pipe-operators.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { ExercisesComponent } from './pages/exercises/exercises.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     AnimalCardComponent,
     PipeOperatorsComponent,
     TwoWayBindingComponent,
+    ExercisesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

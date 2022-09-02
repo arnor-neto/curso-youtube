@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Animal } from 'src/interfaces/Animal';
+
+import { ListService } from 'src/app/services/list.service';
 
 @Component({
   selector: 'app-list-render',
@@ -16,11 +19,15 @@ export class ListRenderComponent implements OnInit {
 
   selectedAnimal: Animal | undefined = undefined;
 
-  constructor() {}
+  constructor(private listService: ListService) {}
 
   ngOnInit(): void {}
 
   handleSelectAnimal(animal: Animal) {
     this.selectedAnimal = animal;
+  }
+
+  handleDeleteAnimal(animal: Animal) {
+    this.animals = this.listService.remove(this.animals, animal);
   }
 }

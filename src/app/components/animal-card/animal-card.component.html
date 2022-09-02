@@ -1,5 +1,9 @@
-<div class="animal-card" (click)="onSelect()">
+<div class="animal-card">
   <p>Nome: {{ animal.name }}</p>
   <hr class="divider" />
   <p>Tipo: {{ animal.type }}</p>
+  <hr class="divider" />
+  <button (click)="onSelect()">Detalhes</button>
+  <hr class="divider" />
+  <button (click)="onDelete()">Excluir</button>
 </div>
